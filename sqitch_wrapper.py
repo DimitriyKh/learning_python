@@ -13,7 +13,7 @@ logger.setLevel(logging.INFO)
 parser = argparse.ArgumentParser(description='wrapper for sqitch')
 try:
     parser.add_argument('--application',default='PM',type=str,help='application code to run the migration on. Defaults to PM')
-    parser.add_argument('--ignore',nargs='+',default='',help='list of db_schema\'s to skip in mugration')
+    parser.add_argument('--ignore',nargs='+',default='',help='list of db_schema\'s to skip in migration')
     parser.add_argument('--db_server',type=str,required=True,help='endpoint to master DB server')
     parser.add_argument('--db_user',type=str,required=True,help='user to connect to db_server')
     parser.add_argument('--db_pass',type=str,required=True,help='password of db_user for db_server')
